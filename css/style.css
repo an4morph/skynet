@@ -178,4 +178,130 @@ header {
     .advantages .advs .heart {
       padding-top: 15px; }
 
+.tables {
+  background-color: #ebf0f1; }
+  .tables h2 {
+    color: #363636;
+    font-family: UbuntuBold;
+    font-size: 26px;
+    text-align: center;
+    margin: 50px 0 30px 0; }
+  .tables tr {
+    background-color: #ffffff;
+    border: 1px solid #ddd; }
+    .tables tr td {
+      font-family: OpenSansReg;
+      font-size: 14px;
+      vertical-align: middle !important; }
+      .tables tr td img {
+        margin: 23px 50px; }
+      .tables tr td button {
+        width: 135px;
+        height: 44px;
+        background-color: transparent;
+        border: 1px solid #0081bc;
+        border-radius: 2px;
+        color: #0099de;
+        font-family: OpenSansBold;
+        font-size: 14px;
+        margin-right: 40px; }
+      .tables tr td button:focus {
+        outline: none; }
+      .tables tr td button:hover {
+        background-color: #0081bc;
+        color: #ffffff; }
+      .tables tr td button:active {
+        transform: scale(0.98); }
+    .tables tr .header_tbl {
+      font-family: UbuntuReg;
+      font-size: 28px;
+      line-height: 29px; }
+
+.connect {
+  background-color: #ebf0f1;
+  text-align: center;
+  padding: 100px;
+  background-image: url(../img/bgi-connect.png);
+  background-size: cover;
+  background-position: center; }
+  .connect h3 {
+    font-family: UbuntuBold;
+    font-size: 26px;
+    color: #363636;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .connect button {
+    margin-top: 12px;
+    width: 165px;
+    height: 38px;
+    background-color: #0099de;
+    font-family: OpenSansBold;
+    font-size: 14px;
+    color: #ffffff;
+    border: none; }
+  .connect button:focus {
+    outline: none; }
+  .connect button:hover {
+    background-color: #0081bc;
+    color: #ffffff; }
+  .connect button:active {
+    transform: scale(0.98); }
+
+.tables2 {
+  background-color: #ebf0f1; }
+  .tables2 h2 {
+    color: #363636;
+    font-family: UbuntuBold;
+    font-size: 26px;
+    text-align: center;
+    margin: 20px 0 30px 0; }
+  .tables2 tr {
+    background-color: #ffffff;
+    border: 1px solid #ddd; }
+    .tables2 tr td {
+      font-family: OpenSansReg;
+      font-size: 14px;
+      vertical-align: middle !important; }
+      .tables2 tr td p {
+        margin: 23px 50px; }
+      .tables2 tr td button {
+        width: 135px;
+        height: 44px;
+        background-color: transparent;
+        border: 1px solid #0081bc;
+        border-radius: 2px;
+        color: #0099de;
+        font-family: OpenSansBold;
+        font-size: 14px;
+        margin-right: 40px; }
+      .tables2 tr td button:focus {
+        outline: none; }
+      .tables2 tr td button:hover {
+        background-color: #0081bc;
+        color: #ffffff; }
+      .tables2 tr td button:active {
+        transform: scale(0.98); }
+    .tables2 tr .mbs {
+      font-family: OpenSansBold;
+      font-size: 25px; }
+    .tables2 tr .som {
+      margin-left: 100px;
+      font-family: OpenSansReg;
+      font-size: 20px; }
+      .tables2 tr .som .blue-text {
+        font-family: OpenSansBold; }
+    .tables2 tr .size {
+      font-family: UbuntuReg;
+      font-size: 50px; }
+    .tables2 tr .xs {
+      color: #9c9c9c; }
+    .tables2 tr .s {
+      color: #5d5d5d; }
+    .tables2 tr .m {
+      color: #363636; }
+    .tables2 tr .l {
+      color: #0099de; }
+    .tables2 tr .xl {
+      color: #0081bc; }
+
 /*# sourceMappingURL=style.css.map */
