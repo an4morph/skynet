@@ -31,6 +31,15 @@ $white : #ffffff;
 .blue-text{
 	color: $lblue;
 }
+.yellow-text{
+	color: #f6c605;
+}
+.green-text{
+	color: #2ecc71;
+}
+.grey-text{
+	color: $lgrey;
+}
 /*=========================================*/
 
 
@@ -158,6 +167,62 @@ header{
 		}
 		button:active{
 			transform: scale(0.98);
+		}
+	}
+}
+.advantages{
+	background-color: $lblue;
+	.tarif{
+		position: relative;
+		height: 294px;
+		background-color: $white;
+		padding: 30px 50px 30px 35px;
+		margin-top: -82px;
+		img{
+			position: absolute;
+			bottom: 0;
+			right: 20px;
+		}
+		h3{
+			margin-top: 0;
+			margin-bottom: 15px;
+			font-family: UbuntuMed;
+			font-size: 18px;
+		}
+		p{
+			margin: 0;
+			font-family: OpenSansReg;
+			font-size: 14px;
+		}
+		.blue-text, .yellow-text, .green-text{
+			font-family: UbuntuMed;
+			font-size: 45px;
+			margin-top: 50px;
+		}
+		.more{
+			margin-top: 17px;
+			color: $lblue;
+			font-family: OpenSansBold;
+			cursor: pointer;
+		}
+	}
+	.advs{
+		text-align: center;
+		padding: 109px 0;
+		p{
+			margin-top: 10px;
+			color: $white;
+			font-family: UbuntuBold;
+			font-size: 22px;
+		}
+		.heart, .lamp, .cloud{
+			padding: 0 50px;
+		}
+		.fourg{
+			padding: 0 85px;
+		}
+		.heart{
+			padding-top: 15px;
 		}
 	}
 }

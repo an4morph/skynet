@@ -17,6 +17,15 @@
 .blue-text {
   color: #0099de; }
 
+.yellow-text {
+  color: #f6c605; }
+
+.green-text {
+  color: #2ecc71; }
+
+.grey-text {
+  color: #9c9c9c; }
+
 /*=========================================*/
 header {
   background-color: #00cccc;
@@ -123,5 +132,50 @@ header {
       background-color: #0081bc; }
     header main button:active {
       transform: scale(0.98); }
+
+.advantages {
+  background-color: #0099de; }
+  .advantages .tarif {
+    position: relative;
+    height: 294px;
+    background-color: #ffffff;
+    padding: 30px 50px 30px 35px;
+    margin-top: -82px; }
+    .advantages .tarif img {
+      position: absolute;
+      bottom: 0;
+      right: 20px; }
+    .advantages .tarif h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-family: UbuntuMed;
+      font-size: 18px; }
+    .advantages .tarif p {
+      margin: 0;
+      font-family: OpenSansReg;
+      font-size: 14px; }
+    .advantages .tarif .blue-text, .advantages .tarif .yellow-text, .advantages .tarif .green-text {
+      font-family: UbuntuMed;
+      font-size: 45px;
+      margin-top: 50px; }
+    .advantages .tarif .more {
+      margin-top: 17px;
+      color: #0099de;
+      font-family: OpenSansBold;
+      cursor: pointer; }
+  .advantages .advs {
+    text-align: center;
+    padding: 109px 0; }
+    .advantages .advs p {
+      margin-top: 10px;
+      color: #ffffff;
+      font-family: UbuntuBold;
+      font-size: 22px; }
+    .advantages .advs .heart, .advantages .advs .lamp, .advantages .advs .cloud {
+      padding: 0 50px; }
+    .advantages .advs .fourg {
+      padding: 0 85px; }
+    .advantages .advs .heart {
+      padding-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */
