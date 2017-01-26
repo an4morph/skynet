@@ -1,0 +1,163 @@
+$black : #363636;
+$lblue : #0099de;
+$dblue : #0081bc;
+$lgrey : #9c9c9c;
+$dgrey : #5d5d5d;
+$white : #ffffff;
+
+@font-face {
+	font-family: UbuntuReg;
+	src: url(../fonts/Ubuntu-R_0.ttf);
+}
+@font-face {
+	font-family: UbuntuBold;
+	src: url(../fonts/Ubuntu-B_0.ttf);
+}
+@font-face {
+	font-family: UbuntuMed;
+	src: url(../fonts/Ubuntu-M_0.ttf);
+}
+@font-face {
+	font-family: OpenSansReg;
+	src: url(../fonts/open_sans_reg.ttf);
+}
+@font-face {
+	font-family: OpenSansBold;
+	src: url(../fonts/open_sans_bold.ttf);
+}
+
+
+/*================span-classes==================*/
+.blue-text{
+	color: $lblue;
+}
+/*=========================================*/
+
+
+header{
+	background-color: #00cccc;
+	background-image: url(../img/bgi-header.png);
+	background-position: center;
+	background-size: cover;
+	.logo{
+		margin-top: 18px;
+	}
+	.menu-lg{
+		font-family: UbuntuReg;
+		color: $black;
+		font-size: 16px;
+		margin-top: 40px;
+		margin-right: -15px;
+		margin-left: 40px;
+		@media screen and (max-width: 1199px) {
+			font-size: 14px;
+		}
+		li{
+			margin-left: 1%;
+			cursor: pointer;
+			margin-right: 2%;
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+		li:hover{
+			color: $dblue;
+		}
+	}
+	.menu-sm{
+		font-family: UbuntuReg;
+		color: $black;
+		font-size: 14px;
+		height: 37px;
+		margin-top: 13px;
+		menu{
+			padding: 0;
+			height: 40px;
+			overflow: hidden;
+			position: absolute;
+			transition: height 0.5s;
+			li{
+				width: 175px;
+				height: 40px;
+				padding-top: 10px;
+				background-color: #ccc;
+				list-style: none;
+				cursor: pointer;
+				text-indent: 20px;
+				transition: all 0.3s;
+				border-bottom: 1px solid $white;
+				opacity: 0.9;
+			}
+			li:hover{
+				background-color: #6cc5ed;
+				opacity: 1;
+			}
+			li.first{
+				padding-left: 30px;
+				margin-bottom: 10px;
+				background-color: rgba(0,0,0,0);
+				border: none;
+				font-size: 25px;
+			}
+			li.first:hover{
+				background-color: rgba(0,0,0,0);
+			}
+		}
+		menu:hover{
+			height: 293px;
+			z-index: 10;
+		}
+	}
+	.contact{
+		text-align: right;
+		margin-top: 37px;
+		position: relative;
+		.user{
+			position: absolute;
+			right: 40px;
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background-image: url(../img/icons/login.png);
+			cursor: pointer;
+		}
+		.phone{
+			position: absolute;
+			right: 0;
+			display: inline-block;
+			width: 27px;
+			height: 27px;
+			background-image: url(../img/icons/call.png);
+			cursor: pointer;
+		}
+	}
+	main{
+		text-align: center;
+		h2{
+			margin-top: 150px;
+			margin-bottom: 40px;
+			font-size: 34px;
+			font-family: UbuntuMed;
+			text-transform: uppercase;
+		}
+		button{
+			margin-bottom: 225px;
+			width: 225px;
+			height: 55px;
+			background-color: $lblue;
+			color: $white;
+			font-family: OpenSansBold;
+			font-size: 18px;
+			border: none;
+		}
+		button:focus{
+			outline: none;
+		}
+		button:hover{
+			background-color: $dblue;
+		}
+		button:active{
+			transform: scale(0.98);
+		}
+	}
+}

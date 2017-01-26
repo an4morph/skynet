@@ -1,0 +1,127 @@
+@font-face {
+  font-family: UbuntuReg;
+  src: url(../fonts/Ubuntu-R_0.ttf); }
+@font-face {
+  font-family: UbuntuBold;
+  src: url(../fonts/Ubuntu-B_0.ttf); }
+@font-face {
+  font-family: UbuntuMed;
+  src: url(../fonts/Ubuntu-M_0.ttf); }
+@font-face {
+  font-family: OpenSansReg;
+  src: url(../fonts/open_sans_reg.ttf); }
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../fonts/open_sans_bold.ttf); }
+/*================span-classes==================*/
+.blue-text {
+  color: #0099de; }
+
+/*=========================================*/
+header {
+  background-color: #00cccc;
+  background-image: url(../img/bgi-header.png);
+  background-position: center;
+  background-size: cover; }
+  header .logo {
+    margin-top: 18px; }
+  header .menu-lg {
+    font-family: UbuntuReg;
+    color: #363636;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-right: -15px;
+    margin-left: 40px; }
+    @media screen and (max-width: 1199px) {
+      header .menu-lg {
+        font-size: 14px; } }
+    header .menu-lg li {
+      margin-left: 1%;
+      cursor: pointer;
+      margin-right: 2%; }
+    header .menu-lg li:last-child {
+      margin-right: 0; }
+    header .menu-lg li:hover {
+      color: #0081bc; }
+  header .menu-sm {
+    font-family: UbuntuReg;
+    color: #363636;
+    font-size: 14px;
+    height: 37px;
+    margin-top: 13px; }
+    header .menu-sm menu {
+      padding: 0;
+      height: 40px;
+      overflow: hidden;
+      position: absolute;
+      transition: height 0.5s; }
+      header .menu-sm menu li {
+        width: 175px;
+        height: 40px;
+        padding-top: 10px;
+        background-color: #ccc;
+        list-style: none;
+        cursor: pointer;
+        text-indent: 20px;
+        transition: all 0.3s;
+        border-bottom: 1px solid #ffffff;
+        opacity: 0.9; }
+      header .menu-sm menu li:hover {
+        background-color: #6cc5ed;
+        opacity: 1; }
+      header .menu-sm menu li.first {
+        padding-left: 30px;
+        margin-bottom: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 25px; }
+      header .menu-sm menu li.first:hover {
+        background-color: transparent; }
+    header .menu-sm menu:hover {
+      height: 293px;
+      z-index: 10; }
+  header .contact {
+    text-align: right;
+    margin-top: 37px;
+    position: relative; }
+    header .contact .user {
+      position: absolute;
+      right: 40px;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/login.png);
+      cursor: pointer; }
+    header .contact .phone {
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      background-image: url(../img/icons/call.png);
+      cursor: pointer; }
+  header main {
+    text-align: center; }
+    header main h2 {
+      margin-top: 150px;
+      margin-bottom: 40px;
+      font-size: 34px;
+      font-family: UbuntuMed;
+      text-transform: uppercase; }
+    header main button {
+      margin-bottom: 225px;
+      width: 225px;
+      height: 55px;
+      background-color: #0099de;
+      color: #ffffff;
+      font-family: OpenSansBold;
+      font-size: 18px;
+      border: none; }
+    header main button:focus {
+      outline: none; }
+    header main button:hover {
+      background-color: #0081bc; }
+    header main button:active {
+      transform: scale(0.98); }
+
+/*# sourceMappingURL=style.css.map */
