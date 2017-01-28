@@ -200,8 +200,11 @@ header{
 			position: absolute;
 			bottom: 0;
 			right: 20px;
-			@media screen and (max-width: 1170px) {
+			@media screen and (min-width: 768px) and (max-width: 1170px) {
 				width: 40%;
+			}
+			@media screen and (max-width: 767px) {
+				width: 120px;
 			}
 		}
 		h3{
@@ -271,8 +274,19 @@ header{
 		td{
 			font-family: OpenSansReg;
 			font-size: 14px;
+			@media screen and (max-width: 992px) {
+				padding: 20px 50px!important;
+				text-align: center;
+			}
+			@media screen and (max-width: 992px) {
+				padding: 30px 20px!important;		
+			}
 			img{
 				margin: 23px 50px;
+				@media screen and (max-width: 992px) {
+					margin: 0;
+					margin-bottom: 20px;
+				}
 			}
 			vertical-align: middle!important;
 			button{
@@ -285,6 +299,10 @@ header{
 				font-family: OpenSansBold;
 				font-size: 14px;
 				margin-right: 40px;
+				@media screen and (max-width: 992px) {
+					margin: 20px auto;
+					display: block;
+				}
 			}
 			button:focus{
 				outline: none;
@@ -311,6 +329,9 @@ header{
 	background-image: url(../img/bgi-connect.png);
 	background-size: cover;
 	background-position: center;
+	@media screen and (max-width: 992px) {
+		padding: 30px;	
+	}
 	h3{
 		font-family: UbuntuBold;
 		font-size: 26px;
@@ -354,8 +375,14 @@ header{
 		td{
 			font-family: OpenSansReg;
 			font-size: 14px;
+			@media screen and (max-width: 992px) {
+				text-align: center;		
+			}
 			p{
 				margin: 23px 50px;
+				@media screen and (max-width: 992px) {
+					margin: 0;
+				}
 			}
 			vertical-align: middle!important;
 			button{
@@ -368,6 +395,9 @@ header{
 				font-family: OpenSansBold;
 				font-size: 14px;
 				margin-right: 40px;
+				@media screen and (max-width: 992px) {
+					margin: 20px auto;
+				}
 			}
 			button:focus{
 				outline: none;
@@ -388,6 +418,9 @@ header{
 			margin-left: 100px;
 			font-family: OpenSansReg;
 			font-size: 20px;
+			@media screen and (max-width: 992px) {
+				margin: 0;		
+			}
 			.blue-text{
 				font-family: OpenSansBold;
 			}

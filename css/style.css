@@ -158,9 +158,12 @@ header {
       position: absolute;
       bottom: 0;
       right: 20px; }
-      @media screen and (max-width: 1170px) {
+      @media screen and (min-width: 768px) and (max-width: 1170px) {
         .advantages .tarif img {
           width: 40%; } }
+      @media screen and (max-width: 767px) {
+        .advantages .tarif img {
+          width: 120px; } }
     .advantages .tarif h3 {
       margin-top: 0;
       margin-bottom: 15px;
@@ -217,8 +220,19 @@ header {
       font-family: OpenSansReg;
       font-size: 14px;
       vertical-align: middle !important; }
+      @media screen and (max-width: 992px) {
+        .tables tr td {
+          padding: 20px 50px !important;
+          text-align: center; } }
+      @media screen and (max-width: 992px) {
+        .tables tr td {
+          padding: 30px 20px !important; } }
       .tables tr td img {
         margin: 23px 50px; }
+        @media screen and (max-width: 992px) {
+          .tables tr td img {
+            margin: 0;
+            margin-bottom: 20px; } }
       .tables tr td button {
         width: 135px;
         height: 44px;
@@ -229,6 +243,10 @@ header {
         font-family: OpenSansBold;
         font-size: 14px;
         margin-right: 40px; }
+        @media screen and (max-width: 992px) {
+          .tables tr td button {
+            margin: 20px auto;
+            display: block; } }
       .tables tr td button:focus {
         outline: none; }
       .tables tr td button:hover {
@@ -248,6 +266,9 @@ header {
   background-image: url(../img/bgi-connect.png);
   background-size: cover;
   background-position: center; }
+  @media screen and (max-width: 992px) {
+    .connect {
+      padding: 30px; } }
   .connect h3 {
     font-family: UbuntuBold;
     font-size: 26px;
@@ -286,8 +307,14 @@ header {
       font-family: OpenSansReg;
       font-size: 14px;
       vertical-align: middle !important; }
+      @media screen and (max-width: 992px) {
+        .tables2 tr td {
+          text-align: center; } }
       .tables2 tr td p {
         margin: 23px 50px; }
+        @media screen and (max-width: 992px) {
+          .tables2 tr td p {
+            margin: 0; } }
       .tables2 tr td button {
         width: 135px;
         height: 44px;
@@ -298,6 +325,9 @@ header {
         font-family: OpenSansBold;
         font-size: 14px;
         margin-right: 40px; }
+        @media screen and (max-width: 992px) {
+          .tables2 tr td button {
+            margin: 20px auto; } }
       .tables2 tr td button:focus {
         outline: none; }
       .tables2 tr td button:hover {
@@ -312,6 +342,9 @@ header {
       margin-left: 100px;
       font-family: OpenSansReg;
       font-size: 20px; }
+      @media screen and (max-width: 992px) {
+        .tables2 tr .som {
+          margin: 0; } }
       .tables2 tr .som .blue-text {
         font-family: OpenSansBold; }
     .tables2 tr .size {
