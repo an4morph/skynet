@@ -135,16 +135,32 @@ header {
 
 .advantages {
   background-color: #0099de; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .advantages .tarif-large {
+      width: 50%;
+      margin-top: 110px;
+      margin-left: 25%; } }
+  @media screen and (max-width: 767px) {
+    .advantages .tarif-small {
+      margin-top: -100px; } }
   .advantages .tarif {
     position: relative;
     height: 294px;
     background-color: #ffffff;
     padding: 30px 50px 30px 35px;
     margin-top: -82px; }
+    @media screen and (max-width: 767px) {
+      .advantages .tarif {
+        width: 90%;
+        margin-left: 4.5%;
+        margin-top: 20px; } }
     .advantages .tarif img {
       position: absolute;
       bottom: 0;
       right: 20px; }
+      @media screen and (max-width: 1170px) {
+        .advantages .tarif img {
+          width: 40%; } }
     .advantages .tarif h3 {
       margin-top: 0;
       margin-bottom: 15px;
@@ -158,25 +174,33 @@ header {
       font-family: UbuntuMed;
       font-size: 45px;
       margin-top: 50px; }
+      @media screen and (max-width: 1170px) {
+        .advantages .tarif .blue-text, .advantages .tarif .yellow-text, .advantages .tarif .green-text {
+          margin-top: 20px; } }
     .advantages .tarif .more {
-      margin-top: 17px;
+      position: absolute;
+      bottom: 20px;
       color: #0099de;
       font-family: OpenSansBold;
       cursor: pointer; }
+    .advantages .tarif .more:hover {
+      color: #0081bc; }
   .advantages .advs {
     text-align: center;
     padding: 109px 0; }
+    @media screen and (max-width: 992px) {
+      .advantages .advs .adv-item {
+        margin-top: 30px; } }
     .advantages .advs p {
       margin-top: 10px;
       color: #ffffff;
       font-family: UbuntuBold;
       font-size: 22px; }
-    .advantages .advs .heart, .advantages .advs .lamp, .advantages .advs .cloud {
-      padding: 0 50px; }
-    .advantages .advs .fourg {
-      padding: 0 85px; }
     .advantages .advs .heart {
       padding-top: 15px; }
+      @media screen and (max-width: 992px) {
+        .advantages .advs .heart {
+          padding-top: 10px; } }
 
 .tables {
   background-color: #ebf0f1; }

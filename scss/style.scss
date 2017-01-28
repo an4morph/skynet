@@ -172,16 +172,37 @@ header{
 }
 .advantages{
 	background-color: $lblue;
+	.tarif-large{
+		@media screen and (min-width: 768px) and (max-width: 992px) {
+			width: 50%;
+			margin-top: 110px;
+			margin-left: 25%;
+		}
+	}
+	.tarif-small{
+		@media screen and (max-width: 767px) {
+			margin-top: -100px;
+		}
+	}
 	.tarif{
+		@media screen and (max-width: 767px) {
+			width: 90%;
+			margin-left: 4.5%;
+			margin-top: 20px;
+		}
 		position: relative;
 		height: 294px;
 		background-color: $white;
 		padding: 30px 50px 30px 35px;
 		margin-top: -82px;
+
 		img{
 			position: absolute;
 			bottom: 0;
 			right: 20px;
+			@media screen and (max-width: 1170px) {
+				width: 40%;
+			}
 		}
 		h3{
 			margin-top: 0;
@@ -198,15 +219,27 @@ header{
 			font-family: UbuntuMed;
 			font-size: 45px;
 			margin-top: 50px;
+			@media screen and (max-width: 1170px) {
+				margin-top: 20px;
+			}
 		}
 		.more{
-			margin-top: 17px;
+			position: absolute;
+			bottom: 20px;
 			color: $lblue;
 			font-family: OpenSansBold;
 			cursor: pointer;
 		}
+		.more:hover{
+			color: $dblue;
+		}
 	}
 	.advs{
+		.adv-item{
+			@media screen and (max-width: 992px) {
+				margin-top: 30px;
+			}
+		}
 		text-align: center;
 		padding: 109px 0;
 		p{
@@ -215,14 +248,11 @@ header{
 			font-family: UbuntuBold;
 			font-size: 22px;
 		}
-		.heart, .lamp, .cloud{
-			padding: 0 50px;
-		}
-		.fourg{
-			padding: 0 85px;
-		}
 		.heart{
 			padding-top: 15px;
+			@media screen and (max-width: 992px) {
+				padding-top: 10px;
+			}
 		}
 	}
 }
