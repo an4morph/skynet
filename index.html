@@ -17,6 +17,33 @@
     <![endif]-->
   </head>
 <body>
+
+<div id="modal_form">
+<span id="modal_close"><i class="fa fa-times" aria-hidden="true"></i></span>
+  <div class="mod-blue"><p>Оставьте свои контакты и мы вам перезвоним</p>
+  <form class="form-group" action="">
+    <input type="text" class="form-control" placeholder="Город">
+    <input type="text" class="form-control" placeholder="Имя">
+    <input type="text" class="form-control" placeholder="Номер телефона">
+    <button type="submit">Отправить</button>
+  </form>
+    <div class="mod-blue-hide hidden-sm hidden-md hidden-lg">
+      <h3>Наши телефоны</h3>
+      <p>+996 (312) 123 123<br>+996 (312) 123 123</p>
+      <h3>Наша почта</h3>
+      <p>sales@skynet.kg</p>
+    </div>
+  </div>
+  <div class="mod-white hidden-xs">
+    <h3>Наши телефоны</h3>
+    <p>+996 (312) 123 123<br>+996 (312) 123 123</p>
+    <h3>Наша почта</h3>
+    <p>sales@skynet.kg</p>
+  </div>
+</div>
+<div id="overlay"></div>
+
+
   <header>
     <div class="container">
       <div class="row">
@@ -55,7 +82,7 @@
         <div class="col-xs-4 col-md-1">
           <div class="contact">
             <i class="user"></i>
-            <i class="phone"></i>
+            <i class="phone" id="call"></i>
           </div>
         </div>
       </div>
@@ -345,5 +372,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

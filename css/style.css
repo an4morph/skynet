@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: UbuntuReg;
   src: url(../fonts/Ubuntu-R_0.ttf); }
@@ -41,6 +42,105 @@ a:focus {
 a:active {
   text-decoration: none; }
 
+/*==================================╨Ь╨╛╨┤╨░╨╗╨║╨░============*/
+#modal_form {
+  display: none;
+  opacity: 0;
+  text-align: center;
+  width: 60%;
+  height: 400px;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  z-index: 10;
+  font-family: OpenSansReg; }
+  @media screen and (max-width: 767px) {
+    #modal_form {
+      width: 80%;
+      left: 10%; } }
+  #modal_form .mod-blue {
+    display: inline-block;
+    background-color: #0099de;
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #ffffff; }
+    @media screen and (max-width: 767px) {
+      #modal_form .mod-blue {
+        float: none;
+        width: 100%; } }
+    #modal_form .mod-blue .mod-blue-hide h3, #modal_form .mod-blue .mod-blue-hide p {
+      font-size: 14px;
+      padding: 0;
+      margin: 5px; }
+    #modal_form .mod-blue p {
+      font-size: 18px;
+      padding: 33px 12%; }
+      @media screen and (max-width: 767px) {
+        #modal_form .mod-blue p {
+          font-size: 14px;
+          padding: 10px 12%; } }
+    #modal_form .mod-blue input {
+      height: 42px;
+      width: 70%;
+      margin-left: 15%; }
+      @media screen and (max-width: 767px) {
+        #modal_form .mod-blue input {
+          height: 32px; } }
+    #modal_form .mod-blue button {
+      margin-top: 40px;
+      width: 60%;
+      height: 42px;
+      background-color: #0099de;
+      border: 3px solid #ffffff;
+      font-size: 18px;
+      border-radius: 5px; }
+      @media screen and (max-width: 767px) {
+        #modal_form .mod-blue button {
+          margin: 20px 0; } }
+    #modal_form .mod-blue button:hover {
+      background-color: #ffffff;
+      border: none;
+      color: #0099de; }
+    #modal_form .mod-blue button:active {
+      transform: scale(0.99); }
+    #modal_form .mod-blue button:focus {
+      outline: none; }
+  #modal_form .mod-white {
+    display: inline-block;
+    background-color: #ffffff;
+    position: relative;
+    width: 50%;
+    height: 100%; }
+    #modal_form .mod-white h3 {
+      padding: 35px 0;
+      font-size: 16px;
+      color: #0099de; }
+    #modal_form .mod-white p {
+      font-size: 24px; }
+  #modal_form #modal_close {
+    color: #ffffff;
+    font-size: 25px;
+    position: absolute;
+    top: -25px;
+    right: -25px; }
+  #modal_form #modal_close:hover {
+    color: #9c9c9c;
+    cursor: pointer; }
+
+#overlay {
+  display: none;
+  opacity: 0;
+  background-color: #000;
+  opacity: 0.7;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  top: 0;
+  left: 0; }
+
+/*=======================================================*/
 header {
   background-color: #00cccc;
   background-image: url(../img/bgi-header.png);
