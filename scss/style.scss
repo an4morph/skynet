@@ -42,6 +42,20 @@ $white : #ffffff;
 }
 /*=========================================*/
 
+a{
+	color: inherit;
+	cursor: pointer;
+}
+a:hover{
+	color: $lgrey;
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
 
 header{
 	background-color: #00cccc;
@@ -434,5 +448,137 @@ header{
 		.m{ color: $black; }
 		.l{ color: $lblue; }
 		.xl{ color: $dblue; }
+	}
+
+
+	.advert{
+		color: $black;
+		text-align: center;
+		margin-top: 120px;
+		margin-bottom: 63px;
+		.adv_item{
+			@media screen and (max-width: 767px) {
+				margin-top: 40px;
+			}
+			h3{
+				font-family: UbuntuReg;
+				font-size: 26px;
+			}
+			p{
+				font-family: OpenSansReg;
+				font-size: 14px;
+				padding: 0 7%;
+				@media screen and (max-width: 767px) {
+					padding: 0 20%;
+				}
+			}
+		}
+	}
+}
+
+footer{
+	background-color: #353535;
+	color: $white;
+	font-family: OpenSansReg;
+	.foot-row{
+		margin-top: 54px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $white;
+		@media screen and (max-width: 767px) {
+			margin-left: 10%;
+		}
+		.contacts, .address, .social{
+			padding-left: 0;
+			h3{
+				@media screen and (max-width: 991px) {
+					margin-bottom: 10px;
+				}
+				font-family: OpenSansBold;
+				font-size: 16px;
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 16px;
+			}
+			i{
+				cursor: pointer;
+				font-size: 20px;
+				margin-right: 12px;
+				@media screen and (min-width: 991px) {
+					margin-right: 8px;
+				}
+			}
+		}
+		.social{
+			padding-left: 20px;
+			@media screen and (max-width: 991px) {
+				padding-left: 0;
+			}
+		}
+	}
+	.license{
+		margin: 15px 0;
+		font-family: OpenSansReg;
+		font-size: 14px;
+		@media screen and (max-width: 767px) {
+			margin-left: 10%;
+		}
+		.copy{
+			display: inline-block;
+			
+		}
+		.lic{
+			display: inline-block;
+			float: right;
+			margin-right: 40px;
+			margin-bottom: 0;
+			@media screen and (max-width: 767px) {
+				float: none;
+				display: block;
+			}
+			span{
+				display: inline-block;
+				vertical-align: middle;
+				float: right;
+				padding-top: 4px;
+				padding-left: 10px;
+				@media screen and (max-width: 767px) {
+					float: none;
+					padding-top: 0;
+				}
+			}
+			i{
+				display: inline-block;
+				background-image: url(../img/license.png);
+				background-repeat: no-repeat;
+				width: 25px;
+				height: 25px;
+			}
+		}
+		.doc{
+			display: inline-block;
+			float: right;
+			@media screen and (max-width: 767px) {
+				float: none;
+				display: block;
+			}
+			span{
+				display: inline-block;
+				float: right;
+				padding-top: 4px;
+				padding-left: 10px;	
+				@media screen and (max-width: 767px) {
+					float: none;
+					padding-top: 0;
+				}			
+			}
+			i{
+				display: inline-block;
+				background-image: url(../img/dogovor.png);
+				background-repeat: no-repeat;
+				width: 25px;
+				height: 25px;
+			}
+		}
 	}
 }
