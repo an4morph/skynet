@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skynet</title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -46,7 +47,7 @@
 
   <header>
     <div class="container">
-      <div class="row">
+      <div class="row wow fadeIn">
         <div class="col-xs-4 col-md-2">
           <div class="logo"><img src="img/skynet_logo.png" alt="logo" width="146px" height="55px"></div>
         </div>
@@ -86,7 +87,7 @@
           </div>
         </div>
       </div>
-      <main>
+      <main class="wow fadeIn" data-wow-delay="0.3s">
         <h2>Для <span class="blue-text">бизнеса</span></h2>
         <button id="connect">Подключиться</button>
       </main>
@@ -96,7 +97,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6 col-xs-12 tarif-small">
-          <div class="tarif">
+          <div class="tarif wow fadeInUp" data-wow-offset="180" data-wow-duration="0.6s" data-wow-delay="0.1s">
             <h3>Тариф "Business SMALL"</h3>
             <p class="grey-text">Для тех, кому важно просто быть на связи</p>
             <p class="blue-text">до 5</p>
@@ -106,7 +107,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="tarif">
+          <div class="tarif wow fadeInUp" data-wow-offset="180" data-wow-duration="0.6s" data-wow-delay="0.3s">
             <h3>Тариф "Business MEDIUM"</h3>
             <p class="grey-text">Для тех, кому важен баланс скорости и цены</p>
             <p class="yellow-text">до 7</p>
@@ -116,7 +117,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 tarif-large">
-          <div class="tarif">
+          <div class="tarif wow fadeInUp" data-wow-offset="180" data-wow-duration="0.6s" data-wow-delay="0.5s">
             <h3>Тариф "Business LARGE"</h3>
             <p class="grey-text">Для тех, кому важна скорость и надежность</p>
             <p class="green-text">до 10</p>
@@ -127,19 +128,19 @@
         </div>
       </div>
       <div class="advs row">
-        <div class="adv-item heart col-md-3 col-sm-6 col-xs-12">
+        <div class="adv-item heart col-md-3 col-sm-6 col-xs-12 wow fadeIn">
           <img src="img/icons/heart.png">
           <p>Мы любим <br>наших абонентов</p>
         </div>
-        <div class="adv-item fourg col-md-3 col-sm-6 col-xs-12">
+        <div class="adv-item fourg col-md-3 col-sm-6 col-xs-12 wow fadeIn">
           <img src="img/icons/4g.png">
           <p>С лучшими <br>ценами</p>
         </div>
-        <div class="adv-item lamp col-md-3 col-sm-6 col-xs-12">
+        <div class="adv-item lamp col-md-3 col-sm-6 col-xs-12 wow fadeIn">
           <img src="img/icons/lamp.png">
           <p>Мы любим <br>инновации</p>
         </div>
-        <div class="adv-item cloud col-md-3 col-sm-6 col-xs-12">
+        <div class="adv-item cloud col-md-3 col-sm-6 col-xs-12 wow fadeIn">
           <img src="img/icons/cloud.png">
           <p>Огромная <br>зона покрытия</p>
         </div>
@@ -224,9 +225,9 @@
     </div>
   </section>
   <div class="connect">
-      <h3>Будем<br><span class="blue-text">подключаться</span></h3>
-      <p>Заполните он-лайн заявку на подключение <br>и мы свяжемся с вами в ближайшее время</p>
-      <button id="check_address">Проверить адрес</button>
+      <h3 class="wow fadeInUp" data-wow-offset="150" data-wow-delay="0.1s">Будем<br><span class="blue-text">подключаться</span></h3>
+      <p class="wow fadeInUp" data-wow-offset="150" data-wow-delay="0.2s">Заполните он-лайн заявку на подключение <br>и мы свяжемся с вами в ближайшее время</p>
+      <button class="wow fadeInUp" data-wow-offset="150" data-wow-delay="0.4s" id="check_address">Проверить адрес</button>
   </div>
   <section class="tables2">
     <div class="container">
@@ -373,5 +374,9 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 </html>

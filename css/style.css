@@ -142,6 +142,7 @@ a:active {
 
 /*=======================================================*/
 header {
+  height: 100vh;
   background-color: #00cccc;
   background-image: url(../img/bgi-header.png);
   background-position: center;
@@ -226,7 +227,7 @@ header {
   header main {
     text-align: center; }
     header main h2 {
-      margin-top: 150px;
+      margin-top: 33vh;
       margin-bottom: 40px;
       font-size: 34px;
       font-family: UbuntuMed;
