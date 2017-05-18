@@ -1,0 +1,19 @@
+{
+  "name": "skynet",
+  "homepage": "https://github.com/an4morph/skynet",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wow": "^1.1.2",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
